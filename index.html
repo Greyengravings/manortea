@@ -32,7 +32,7 @@
             margin-top: 3px;
         }
         header .gst-fssai {
-            font-size: 0.9em; /* Smaller size for GST and FSSAI numbers */
+            font-size: 0.7em; /* Smaller size for GST and FSSAI numbers */
             color: #fff;
             margin-top: 1px;
         }
@@ -544,14 +544,55 @@
         .special-product-card img:hover {
             transform: scale(1.1); /* Slight zoom effect on image hover */
         }
-
+        .info-btn {
+            position: fixed;
+            top: 100px; /* Adjust the position from the bottom */
+            left: 20px; /* Adjust the position from the right */
+            background-color: #007BFF;
+            padding: 10px;
+            border-radius: 45px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            width: auto; /* Adjust to auto so the text doesn't overflow */
+            height: auto;
+            transition: all 0.3s ease;
+            max-width: 250px; /* Limit the maximum width */
+            white-space: nowrap;
+        }
+        
+        .fssai-img {
+            width: 70px; /* Adjust image size */
+            height: 70px;
+            border-radius: 70px;
+        }
+        .fssai-number {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .info-btn:hover {
+            background-color: #0056b3;
+        }
+        .gst-info {
+            font-size: 0.9em; /* Smaller size for the GST number */
+            color: white; /* Lighter color for GST info */
+            margin-top: 5px;
+        }
+        
     </style>
 </head>
 <body>
     <header>
         <div class="name">
             <h1>Mahalaxmi Traders</h1>
-            <p class="gst-fssai">GST:27ADRPN3696H1ZT | FSSAI:11523078000114</p>
+            <p class="gst-info">GST No:27ADRPN3696H1ZT</p>
+        </div>
+        <div class="info-btn">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeOhP2tRodsIkbadkppOzlbzTDYZFavzZSyQ&s" alt="FSSAI Logo" class="fssai-img">
+            <span class="fssai-number">11523078000114</span>
         </div>
         <div class="options">
             <a href="https://maps.app.goo.gl/F4WarpNYQcDx639Y9" class="locate-us-btn">Locate Store</a>
